@@ -7,7 +7,10 @@ def clean_text(text):
     Cleans Amharic text by removing special characters, emojis, and extra spaces.
     It also normalizes punctuation and prepares the text for NLP tasks.
     """
-
+    # Check if the text is a string; if not, return an empty string or appropriate placeholder
+    if not isinstance(text, str):
+        return ""
+    
     # 1. Remove emojis using the emoji package
     text = emoji.replace_emoji(text, replace="")  # Removes emojis and replaces them with empty space
     
@@ -33,6 +36,7 @@ def clean_text(text):
     text = re.sub(r'\d+', '', text)
     
     return text
+
 
 def preprocess_data(df):
     """Preprocess the dataframe by cleaning the message text."""
