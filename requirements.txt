@@ -3,3 +3,5 @@ seaborn
 emoji
 matplotlib
 wordcloud
+spacy
+scikit-learn
