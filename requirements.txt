@@ -5,3 +5,9 @@ matplotlib
 wordcloud
 spacy
 scikit-learn
+transformers 
+datasets 
+seqeval   
+numpy
+torch
+evaluate
