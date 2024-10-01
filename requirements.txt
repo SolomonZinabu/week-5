@@ -11,3 +11,5 @@ seqeval
 numpy
 torch
 evaluate
+lime
+shap
